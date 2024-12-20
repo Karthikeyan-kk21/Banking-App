@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(120deg, #f7f8f9, #e6ffee); /* Subtle greenish background */
+        color: #333;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        background-color: #009933; /* New Green */
+        padding: 15px 20px;
+        text-align: left;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: #33cc33; /* Lighter green on hover */
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+        color: #009933; /* New Green */
+        font-size: 28px;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: block;
+        color: #333;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    button {
+        background-color: #009933; /* New Green */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    button:hover {
+        background-color: #33cc33; /* Lighter Green on hover */
+    }
+
+    /* Footer Styling */
+    footer {
+        background-color: #009933; /* New Green */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+        margin-top: auto; /* Pushes the footer to the bottom */
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <a href="Index.html" id="home">Home</a>
+    </nav>
+
+    <h1>Login to view more features of our Banking</h1>
+
+    <form action="login" method="GET">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email">
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter your password">
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <footer>
+        &copy; 2024 ICICI Bank. All rights reserved.
+    </footer>
+</body>
+</html>

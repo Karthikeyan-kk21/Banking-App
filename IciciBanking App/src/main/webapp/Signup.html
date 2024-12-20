@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - ICICI Banking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F0F8FF; /* Light sky blue background */
+            color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav a {
+            color: #006400; /* Dark green for the links */
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.8); /* White with opacity for the link */
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #004d00; /* Darker green on hover */
+            color: white;
+        }
+
+        .signup-container {
+            background-color: #ffffff; /* White background for form */
+            padding: 40px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #006400; /* Dark green color */
+            font-family: 'Georgia', serif;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 70%; /* Adjust width to make them shorter */
+            padding: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #006400;
+            border-radius: 6px;
+            font-size: 16px;
+            color: #333;
+            background-color: #e8f5e9;
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #004d00;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #006400;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #004d00;
+        }
+
+        button[type="reset"] {
+            background-color: #00bcd4;
+            color: white;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #0097a7;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            .signup-container {
+                padding: 30px;
+                max-width: 90%;
+            }
+
+            input[type="email"], input[type="password"] {
+                width: 80%;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #006400; /* Dark green footer */
+            color: white;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="Signup.html">Signup</a>
+        <a href="Login.html">Login</a>
+    </nav>
+
+    <div class="signup-container">
+        <h1>Signup for ICICI Banking</h1>
+
+        <form action="Signup" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 ICICI Bank. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

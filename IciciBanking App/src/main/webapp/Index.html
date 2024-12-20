@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICICI Banking</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f8f9;
+            color: #444;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #006400; /* Dark Green */
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ffd700; /* Gold hover effect */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(45deg, #006400, #4caf50); /* Green gradient */
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/1920x1080?text=Banking+Image');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            background-color: #ffd700; /* Gold color */
+            color: #006400; /* Dark green text */
+            padding: 16px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #ffc107; /* Slightly darker gold on hover */
+            transform: scale(1.05);
+        }
+
+        /* Features Section */
+        .features {
+            background-color: white;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #006400; /* Dark Green color */
+        }
+
+        .features p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+            line-height: 1.6;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .feature-item {
+            width: 30%;
+            background-color: #f1f1f1;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-item h3 {
+            font-size: 24px;
+            color: #006400; /* Dark Green color */
+            margin-bottom: 20px;
+        }
+
+        .feature-item p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #006400; /* Dark Green */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .cta-btn {
+                font-size: 18px;
+                padding: 14px 25px;
+            }
+
+            .features .feature-list {
+                flex-direction: column;
+            }
+
+            .feature-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="Signup.html">Signup</a>
+        <a href="Login.html">Login</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to ICICI Banking</h1>
+        <p>Your trusted partner in managing finances, with advanced features and top-level security.</p>
+        <a href="Signup.html" class="cta-btn">Start Your Journey</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose ICICI Banking?</h2>
+        <p>Our innovative services, enhanced security, and customer-centric solutions ensure that managing your finances is easier than ever. Discover the powerful features we offer.</p>
+
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>24/7 Support</h3>
+                <p>Get help anytime, anywhere with our round-the-clock customer support system.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Secure Transactions</h3>
+                <p>Rest assured knowing that all your transactions are protected with state-of-the-art encryption technologies.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Instant Transfers</h3>
+                <p>Send money instantly with a seamless experience that makes transferring funds quick and easy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ICICI Banking. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
